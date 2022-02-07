@@ -1,3 +1,3 @@
-# TP2CSDEV
+# PYTHON DEV Project
 
-La version console du Jeu du pendu (Hangman)
+You will find here the graphic version of the Hangman game (developped for the Python programming course).
