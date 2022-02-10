@@ -39,11 +39,11 @@ def jeu(mot_a_deviner):
     essaie = 0
     perdu = 0
     lettre_utilisee=[]
-    print(affichage(mot_a_deviner,lettre_trouvee))
+    print("".join(affichage(mot_a_deviner,lettre_trouvee)))
+    return(affichage(mot_a_deviner,lettre_trouvee))
     continu = True
     while continu == True:
         while len(lettre_trouvee) < len(mot_a_deviner):
-            print(len(lettre_trouvee))
             tentative=input("Entrer une lettre \n")
             if tentative in lettre_utilisee:
                 print("Lettre déjà utilisée, vous venez de perdre une chance :(\n")
@@ -62,8 +62,20 @@ def jeu(mot_a_deviner):
                 print("Perdu! :(")
                 perdu = 1
                 break
-            print(affichage(mot_a_deviner,lettre_trouvee))
+            print("".join(affichage(mot_a_deviner,lettre_trouvee)))
+            return(affichage(mot_a_deviner,lettre_trouvee))
+            return(essaie)
         if perdu == 0:
             print("Bien joué! :)")
         continu = False
     file.close()
+
+def mot_jeu(mot_a_deviner,lettre_trouvee):
+    return(affichage(mot_a_deviner,lettre_trouvee))
+
+#def lettre_trouvee(mot_a_deviner):
+ #   for i in range(len(mot_a_deviner)):
+  #          if tentative == mot_a_deviner[i]:
+   #             lettre_trouvee.append(i)
+    #            print("lettre bonne\n")
+     #           lettre_bonne = True

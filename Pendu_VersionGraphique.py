@@ -4,6 +4,10 @@ qui : Etienne Faucher
 quand : le 08/12/2020 
 Interface graphique du pendu
 TODO : rien
+
+Important: Notre code de la preemière séance ne marchait pas avec l'interface graphique. Nous avons essayé de le refaire mais nous n'avons pas eu le temps. 
+Nous avons donc pris un code d'internet et nous l'avons modifié pour faire un pendu graphique.
+Mon git: https://github.com/EtienneFaucher/Pendu_Graphique
 """
 #Importation
 from  tkinter import Tk, Label, Button, Frame, Entry, PhotoImage, Canvas, Menu, StringVar
@@ -118,7 +122,6 @@ MyWindow=Tk()
 MyWindow.title('Le pendu')#Titre de la fenêtre
 MyWindow.geometry('480x560+900+150') #Taille de la fenêtre
 MyWindow.configure(bg='white') #On change la couleur du fond.
-MyWindow.iconbitmap("bonhomme1.gif")
 
 #Creation d'un menu 
 menubar= Menu(MyWindow)
